@@ -24,11 +24,11 @@ STEP 5 – VSC : cd to nvidia/jetson-inference/
 enter docker container (./docker/run.sh)
 
 STEP 6 – VSC : cd to jetson-inference/python/training/classification (cd jetson-inference/python/training/classification/)
-run your script (python3 train.py --model-dir=models/cat_dog data/cat_dog)
+run your script (python3 train.py --model-dir=models/Fruit_recognition data/Fruit_recognition)
 specify the value of how many epochs and batch sizes you want to run. (--batch-size=NumberOfBatchFiles --workers=NumberOfWorkers --epochs=NumberOfEpochs)
 
 STEP 7 – VSC : I EXPORTING I enter docker container (./docker/run.sh)
-Run the onnx export script (python3 onnx_export.py --model-dir=models/cat_dog)
+Run the onnx export script (python3 onnx_export.py --model-dir=models/Fruit_classification)
 
 Look in the jetson-inference/python/training/classification/models/cat_dog folder to see if there is a new model called resnet18.onnx there. That is your re-trained model!
 
@@ -37,4 +37,4 @@ Look in the jetson-inference/python/training/classification/models/cat_dog folde
 
 ## Thank YOU !
 
-[View a video explanation here](video link)# Fruit-AI
+[# Fruit-AI](https://youtu.be/WVq24UVet9c)
